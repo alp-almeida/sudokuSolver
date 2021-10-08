@@ -1,4 +1,5 @@
 import sudoku_back_app
+
 import numpy as np
 
 def vitoria_soma_linha_checa_linha(linha):
@@ -24,7 +25,12 @@ def vitoria_soma_tabuleiro(tabuleiro_VST):
 
 def vitoria_soma_quadrados(t, vQuadrado = False , hQuadrado = False):
 	linha = 0
-	q11 = [t[linha][0:3] , t[linha+1][0:3] , t[linha+2][0:3]]
+	r11 = [t[linha][0:3] , t[linha+1][0:3] , t[linha+2][0:3]]
+	q11 = []
+	for lineOf3 in r11:
+		for i in lineOf3: 
+			q11.append( i ) 
+	
 	q12 = [t[linha][3:6] , t[linha+1][3:6] , t[linha+2][3:6]]
 	q13 = [t[linha][6:9] , t[linha+1][6:9] , t[linha+2][6:9]]
 	linha = 3
@@ -35,11 +41,12 @@ def vitoria_soma_quadrados(t, vQuadrado = False , hQuadrado = False):
 	q31 = [t[linha][0:3] , t[linha+1][0:3] , t[linha+2][0:3]]
 	q32 = [t[linha][6:9] , t[linha+1][6:9] , t[linha+2][6:9]]
 	q33 = [t[linha][6:9] , t[linha+1][6:9] , t[linha+2][6:9]]
-	
+	print (q11)
+	print (sum(q11))
 	if (not vQuadrado and not hQuadrado):
 		#Continuar a criar a regra para a soma
 		#contrauir uma regra para olha cada quadro separadamente
-	
+		False
 	
 	
 	
@@ -60,3 +67,8 @@ def regra_da_vitoria(tabuleiro_RDV):
     
     bool_vitoria = (soma_linhas and soma_colunas) and soma_total
     #print 'Linhas {0} Colunas {1} Total {2}'.format(soma_linhas,soma_colunas,soma_total)
+
+
+
+
+

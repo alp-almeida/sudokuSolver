@@ -18,3 +18,4 @@ def criar_tabuleiro(nLinhas = 9):
 def mostrar_tabuleiro(tabuleiro_MT):
     for lin in tabuleiro_MT:
         print lin
+
