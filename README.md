@@ -11,3 +11,7 @@ Etapas do processo:
 
 Contato profissional:
 https://www.linkedin.com/in/andre-luiz-pereira-de-almeida/
+
+Versão testável:Para aqueles que quiserem testar o app basta ter o python instalado no computador e rodar o arquivo app/GUI_app.py
+
+Seus feedbacks serão bem vindos.
