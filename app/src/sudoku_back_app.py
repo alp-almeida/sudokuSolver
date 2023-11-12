@@ -1,5 +1,4 @@
 from copy import deepcopy
-from numpy import string_
 from configure import *
 
 

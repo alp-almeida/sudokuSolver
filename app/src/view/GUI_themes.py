@@ -1,5 +1,5 @@
 from globals import *
-from sudoku_back_app import checar_duplicidades
+
 
 ''' bg , q1 , q2 , q3'''
 # BG COLOR
